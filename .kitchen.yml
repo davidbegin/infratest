@@ -1,0 +1,30 @@
+---
+driver:
+  name: terraform
+
+provisioner:
+  name: terraform
+  variable_files:
+    - testing.tfvars
+
+platforms:
+  - name: ubuntu
+
+transport:
+  name: ssh
+  # ssh_key: ~/.aws/TerraformKeyEastPair.pem
+  ssh_key: ~/.ssh/id_rsa
+
+verifier:
+  name: terraform
+  format: doc
+  groups:
+    - name: default
+      controls:
+        - operating_system
+      hostnames: public_dns
+      username: ubuntu
+      # port: 22
+
+suites:
+  - name: default
