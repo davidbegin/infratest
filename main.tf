@@ -10,6 +10,7 @@ resource "aws_instance" "babys_first_ec2" {
 
   tags {
     Name = "terraform-kitchentest"
+    creator = "terraform"
   }
 }
 
