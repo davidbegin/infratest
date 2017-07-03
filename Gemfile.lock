@@ -1,14 +1,17 @@
 GIT
   remote: https://github.com/newcontext-oss/kitchen-terraform.git
-  revision: a751ce29c8abe1f27e10c8b53896c8cd9a6d7023
+  revision: 3ca237737138ac9270e7815a2dc345fb74aa944e
+  ref: 3ca237737138ac9270e7815a2dc345fb74aa944e
   specs:
     kitchen-terraform (1.0.0)
-      dry-monads (~> 0.3)
       dry-types (~> 0.9)
       dry-validation (~> 0.10)
+      hashie (~> 3.5)
+      inspec (~> 1.0)
       kitchen-inspec (~> 0.18)
-      mixlib-shellout (~> 2.2)
-      test-kitchen (~> 1.10)
+      mixlib-shellout (~> 2.2, >= 2.2.6)
+      ptools (~> 1.3)
+      test-kitchen (~> 1.10, >= 1.10.0)
 
 GEM
   remote: https://rubygems.org/
@@ -36,9 +39,6 @@ GEM
       dry-container (~> 0.2, >= 0.2.6)
       dry-core (~> 0.2)
       dry-equalizer (~> 0.2)
-    dry-monads (0.3.1)
-      dry-core
-      dry-equalizer
     dry-types (0.11.0)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.1)
@@ -120,6 +120,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    ptools (1.3.3)
     public_suffix (2.0.5)
     rainbow (2.2.2)
       rake

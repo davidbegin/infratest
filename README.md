@@ -1,7 +1,7 @@
-source "https://rubygems.org"
+Trying to isolate issues with https://github.com/newcontext-oss/kitchen-terraform
 
-gem 'test-kitchen'
-
+Notes from my Gemfile
+```
 # Last working commit
 #
 gem 'kitchen-terraform', :git => "https://github.com/newcontext-oss/kitchen-terraform.git",
@@ -39,3 +39,4 @@ gem 'kitchen-terraform', :git => "https://github.com/newcontext-oss/kitchen-terr
 # 	* Required variable not set: region
 #
 # gem 'kitchen-terraform', :git => "https://github.com/newcontext-oss/kitchen-terraform.git"
+```
